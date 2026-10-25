@@ -1,0 +1,57 @@
+/* AST Studio UI Kit — school-landing. Original work, system fonts only. */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0a1f3d; --navy2:#10294f; --gold:#c9a227; --gold2:#e3c766;
+  --ink:#1c2430; --muted:#5b6572; --bg:#f5f2ea; --card:#ffffff; --line:#e4ddc9;
+}
+body{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10}
+.topbar-in{display:flex;align-items:center;gap:16px;padding:14px 20px}
+.brand{font-weight:800;font-size:1.1rem;display:flex;align-items:center;gap:10px}
+.mark{display:inline-grid;place-items:center;width:38px;height:38px;border:2px solid var(--gold);color:var(--gold2);border-radius:10px;font-size:.9rem}
+.nav{margin-left:auto;display:flex;gap:16px;font-size:.95rem}
+.nav a{opacity:.85}.nav a:hover{opacity:1;color:var(--gold2)}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;border:2px solid transparent;cursor:pointer}
+.btn-gold{background:var(--gold);color:#1a1400}.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2) 60%,#163a6b);color:#fff;padding:64px 0 56px}
+.eyebrow{color:var(--gold2);letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;font-weight:700}
+.hero h1{font-size:2rem;line-height:1.25;max-width:640px;margin:14px 0}
+.lede{max-width:620px;opacity:.9}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.stats{display:flex;gap:28px;margin-top:36px;flex-wrap:wrap}
+.stats div{display:flex;flex-direction:column}
+.stats strong{font-size:1.6rem;color:var(--gold2)}
+.stats span{font-size:.85rem;opacity:.8}
+.section{padding:56px 0}
+.section.alt{background:#efe9d8}
+.section h2{font-size:1.6rem;color:var(--navy);margin-bottom:6px}
+.sub{color:var(--muted);margin-bottom:24px;max-width:640px}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{color:var(--navy);margin-bottom:6px}
+.tag{display:inline-block;margin-top:12px;background:#f3ecd6;color:#7a5f00;font-weight:700;font-size:.8rem;padding:4px 12px;border-radius:999px}
+.strip{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{height:130px;border-radius:14px;display:grid;place-items:end start;padding:14px;color:#fff;font-weight:700}
+.t1{background:linear-gradient(135deg,#274b7a,#0a1f3d)}
+.t2{background:linear-gradient(135deg,#7a5a12,#3d2f05)}
+.t3{background:linear-gradient(135deg,#2e6b5e,#123f36)}
+.t4{background:linear-gradient(135deg,#6b2e4a,#3a1226)}
+.notice{background:#fff4cc;border:1px solid #e3c766;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:.9rem}
+.quote p{font-style:italic}
+.quote footer{margin-top:12px;color:var(--muted);font-size:.9rem}
+.narrow{max-width:640px}
+.form{display:grid;gap:14px}
+.form label{font-weight:600;font-size:.95rem}
+.form input,.form textarea{width:100%;margin-top:6px;padding:12px;border:1px solid #cfc6a8;border-radius:10px;font:inherit}
+.addr{margin-top:18px;color:var(--muted);font-size:.9rem}
+.footer{background:var(--navy);color:#cfd8e6;padding:22px 0;font-size:.9rem;text-align:center}
+@media(max-width:640px){.nav{display:none}.hero h1{font-size:1.6rem}}
+@media(min-width:700px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .grid:has(.quote){grid-template-columns:1fr 1fr}
+  .strip{grid-template-columns:repeat(4,1fr)}
+  .tile{height:150px}
+}
